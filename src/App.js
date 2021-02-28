@@ -1,11 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
-import NumberList from "./NumbersList"
+
+import Circle from "./Circle"
+import ColoredCircles from "./ColoredCircles"
 
 function App() {
   return (
     <div className="App">
-      <NumberList />
+      <ColoredCircles />
     </div>
   );
 }

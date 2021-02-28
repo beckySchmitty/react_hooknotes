@@ -2,12 +2,15 @@ import React from "react";
 
 const NumberItem = ({ number, remove }) => {
   const handleRemove = () => {
-    // alert("REMOVING!")
     remove(number)
   }
   return (
     <li>
       <button onClick={handleRemove}>{number}</button>
+      {/* OPTION #2 */}
+      {/* and you could not have to create handleRemove */}
+      {/* <button onClick={remove}>{number}</button> */}
+
     </li>
   )
 }

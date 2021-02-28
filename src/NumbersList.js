@@ -11,6 +11,9 @@ const NumbersList = () => {
     <ul>
       {numbers.map(n => (
         <NumberItem number={n} remove={remove} />
+        // OPTION #2
+        // pass down anon and then you don't have to create handleFunc in child component 
+        // <NumberItem number={n} remove={() => remove(n))} />
       ))}
     </ul>
   )
